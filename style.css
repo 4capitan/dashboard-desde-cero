@@ -356,12 +356,12 @@ body{
     pointer-events: none;
 }
 
-.content main .header .report{
+.report-btn{
     height: 36px;
     padding: 0 16px;
     border-radius: 36px;
     background: var(--primary);
-    color: var(--light);
+    color: var(--light) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -370,11 +370,19 @@ body{
     
 }
 
+.search-form{
+    display: flex;
+}
+
+.btn-lucky{
+    margin-left: 10px;
+    min-width: 135px;
+}
 .header .right{
     display: flex;   
 }
 
-.report.edit{
+.report-btn.edit{
     margin-right: 10px;
 }
 
@@ -434,6 +442,16 @@ body{
 .content main .insights li:nth-child(6) .bx{
     background: var(--light-warning);
     color: var(--warning);
+}
+
+.content main .insights li:nth-child(7) .bx{
+    background: var(--light-);
+    color: var(--primary);
+}
+
+.content main .insights li:nth-child(8) .bx{
+    background: var(--light-primary);
+    color: var(--primary);
 }
 
 .li-width-50{

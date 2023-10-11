@@ -43,15 +43,14 @@
         <!-- Navbar -->
         <nav>
             <i class='bx bx-menu'></i>
-            <form action="#">
+            <form class="search-form" action="#">
                 <div class="form-input">
                     <input type="search" placeholder="Search...">
-                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
-                    <button class="search-btn1">
-                        <span> I have lucky</span>
-                    </button>
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>   
                 </div>
-
+                <a class="report-btn btn-lucky">
+                    <span> I have lucky</span>
+                </a>
             </form>
             <input type="checkbox" id="theme-toggle" hidden>
             <label for="theme-toggle" class="theme-toggle"></label>
@@ -81,12 +80,12 @@
                     </ul>
                 </div>
                 <div class="right">
-                    <a href="#" class="report edit">
+                    <a href="#" class="report-btn edit">
                         <i class='bx bx-edit-alt'></i>
                         <span>Edit Dashboard</span>
                     </a>
 
-                    <a href="#" class="report">
+                    <a href="#" class="report-btn">
                         <i class='bx bx-cloud-download'></i>
                         <span>Download CSV</span>
                     </a>
