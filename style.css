@@ -253,6 +253,13 @@ body{
     cursor: pointer;
 }
 
+.search-btn1 {
+    width: 150px; /* Puedes ajustar el ancho según tus necesidades */
+    display: flex;
+    margin-left: 10px;
+    font-size: 24px; /* Puedes ajustar el tamaño de fuente según tus necesidades */
+}
+
 .content nav .notif{
     font-size: 20px;
     position: relative;
@@ -360,26 +367,25 @@ body{
     justify-content: center;
     grid-gap: 10px;
     font-weight: 500;
+    
+}
+
+.header .right{
+    display: flex;   
+}
+
+.report.edit{
+    margin-right: 10px;
 }
 
 .content main .insights{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     grid-gap: 24px;
     margin-top: 36px;
 }
 
-.insights li:nth-child(5){
-    width: 50%;
-    box-sizing: border-box;
-    float: left;
-}
 
-.insights li:nth-child(6) {
-    width: 50%;
-    box-sizing: border-box;
-    float: left;
-}
 .content main .insights li{
     padding: 24px;
     background: var(--light);
@@ -430,7 +436,17 @@ body{
     color: var(--warning);
 }
 
+.li-width-50{
+    grid-column: span 2;
+}
 
+.li-width-75{
+    grid-column: span 3;
+}
+
+.li-width-25{
+    grid-column: span 1;
+}
 .content main .insights li .info h3{
     font-size: 24px;
     font-weight: 600;
