@@ -2,8 +2,8 @@
 
 :root {
     --light: #f6f6f9;
-    --primary: #1976D2;
-    --light-primary: #CFE8FF;
+    --primary: #cc19d2;
+    --light-primary: #f1cfff;
     --grey: #eee;
     --dark-grey: #AAAAAA;
     --dark: #363949;
@@ -364,11 +364,22 @@ body{
 
 .content main .insights{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
     margin-top: 36px;
 }
 
+.insights li:nth-child(5){
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.insights li:nth-child(6) {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
 .content main .insights li{
     padding: 24px;
     background: var(--light);
@@ -408,6 +419,17 @@ body{
     background: var(--light-danger);
     color: var(--danger);
 }
+
+.content main .insights li:nth-child(5) .bx{
+    background: var(--light-primary);
+    color: var(--primary);
+}
+
+.content main .insights li:nth-child(6) .bx{
+    background: var(--light-warning);
+    color: var(--warning);
+}
+
 
 .content main .insights li .info h3{
     font-size: 24px;

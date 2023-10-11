@@ -20,12 +20,12 @@
             <div class="logo-name"><span>Renso</span>Code</div>
         </a>
         <ul class="side-menu">
-            <li><a href="#"><i class='bx bxs-dashboard'></i>Panel</a></li>
-            <li><a href="#"><i class='bx bx-store-alt'></i>Tienda</a></li>
             <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
-            <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
-            <li><a href="#"><i class='bx bx-group'></i>Usuarios</a></li>
-            <li><a href="#"><i class='bx bx-cog'></i>Ajustes</a></li>
+            <li><a href="active"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="active"><i class='bx bx-store-alt'></i>Tienda</a></li>
+            <li><a href="active"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
+            <li><a href="active"><i class='bx bx-group'></i>Usuarios</a></li>
+            <li><a href="active"><i class='bx bx-cog'></i>Ajustes</a></li>
         </ul>
         <ul class="side-menu">
             <li>
@@ -68,12 +68,18 @@
                     <h1>Panel</h1>
                     <ul class="breadcrumb">
                         <li><a href="#">
-                                Analytics
+                                Dashboard
                             </a></li>
                         /
-                        <li><a href="#" class="active">Tienda</a></li>
+                        <li><a href="#" class="#">Internal</a></li>
+                        /
+                        <li><a href="#" class="active">Analytics</a></li>
                     </ul>
                 </div>
+                <a href="#" class="report">
+                    <i class='bx bx-edit-alt' ></i>
+                    <span>Edit Dashboard</span>
+                </a>
                 <a href="#" class="report">
                     <i class='bx bx-cloud-download'></i>
                     <span>Download CSV</span>
@@ -115,6 +121,24 @@
                         <p>Ventas Totales</p>
                     </span>
                 </li>
+                <li>
+                    <i class='bx bxs-dog'></i>
+                    <span class="info">
+                        <h3>
+                            2,000
+                        </h3>
+                        <p>Proveedores</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-cat'></i>
+                    <span class="info">
+                        <h3>
+                            13,000
+                        </h3>
+                        <p>Productos</p>
+                    </span>
+                </li>
             </ul>
             <!-- End of Insights -->
 
@@ -132,6 +156,7 @@
                                 <th>Usuario</th>
                                 <th>Fecha de Orden</th>
                                 <th>Estado</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -142,6 +167,7 @@
                                 </td>
                                 <td>14-08-2023</td>
                                 <td><span class="status completed">Terminado</span></td>
+                                <td><i class="bx bx-trash"></i></td>
                             </tr>
                             <tr>
                                 <td>
@@ -150,6 +176,7 @@
                                 </td>
                                 <td>14-08-2023</td>
                                 <td><span class="status pending">Pendiente</span></td>
+                                <td><i class="bx bx-trash"></i></td>
                             </tr>
                             <tr>
                                 <td>
@@ -159,6 +186,7 @@
                                 <td>14-08-2023</td>
                                 <td><span class="status process">
                                         Procesando</span></td>
+                                <td><i class="bx bx-trash"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -198,6 +226,99 @@
                 </div>
 
                 <!-- End of Reminders-->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-dollar-circle'></i>
+                        <h3>Ventas Totales</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Iniciar Nuestra Reunión</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Analiza Nuestro Sitio</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Volar Aviones en Simulador</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bxs-dog'></i>
+                        <h3>Proveedores</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Iniciar Nuestra Reunión</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Analiza Nuestro Sitio</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Volar Aviones en Simulador</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bxs-cat'></i>
+                        <h3>Productos</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Iniciar Nuestra Reunión</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Analiza Nuestro Sitio</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Volar Aviones en Simulador</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
 
